@@ -1,6 +1,6 @@
 syntax on
 
-"set termguicolors
+set termguicolors
 
 set showmatch               " show matching 
 set ignorecase              " case insensitive 
@@ -9,7 +9,7 @@ set hlsearch                " highlight search
 set incsearch               " incremental search
 
 set tabstop=4               " number of columns occupied by a tab 
-set softtabstop=4           " see multiple spaces as tabstops so <BS> does the right thing
+set softtabstop=4           " see multiple spaces as tabstops so <BS> does the rig 
 set expandtab               " converts tabs to white space
 
 set smartindent
@@ -33,11 +33,12 @@ set scrolloff=8
 
 set undofile
 
+
 " hides mode because lightline plugin does this for us
 set noshowmode
 
 " this makes the gitsigns column the same as the number column
-set signcolumn=number
+"set signcolumn=number
 
 filetype plugin on
 set cursorline              " highlight current cursorline
@@ -58,12 +59,19 @@ Plug 'tpope/vim-fugitive'  "allows the use of git from within nvim using :Git
 
 Plug 'lewis6991/gitsigns.nvim'
 
+Plug 'neovim/nvim-lspconfig'
+
+" this is our file manager
+Plug 'nvim-tree/nvim-web-devicons' " optional, for file icons
+Plug 'nvim-tree/nvim-tree.lua'
+
+Plug 'catppuccin/nvim', { 'as': 'catppuccin' }
+
 call plug#end()
 
+colorscheme catppuccin
 
 lua require('funnybot9980')
-
-
 
 
 " Telescope mappings
