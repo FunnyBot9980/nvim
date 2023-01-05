@@ -36,6 +36,8 @@ set undofile
 " hides mode because lightline plugin does this for us
 set noshowmode
 
+" this makes the gitsigns column the same as the number column
+set signcolumn=number
 
 filetype plugin on
 set cursorline              " highlight current cursorline
@@ -53,6 +55,8 @@ Plug 'nvim-telescope/telescope-fzf-native.nvim', {'do': 'make' }
 Plug 'itchyny/lightline.vim'
 
 Plug 'tpope/vim-fugitive'  "allows the use of git from within nvim using :Git
+
+Plug 'lewis6991/gitsigns.nvim'
 
 call plug#end()
 
