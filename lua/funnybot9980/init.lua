@@ -1,7 +1,7 @@
-require('funnybot9980/nvim-tree')
 require('funnybot9980/telescope')
 require('funnybot9980/remap')
 require('funnybot9980/lightline')
 require('funnybot9980/gitsigns')
-require('funnybot9980/lsp')
-require('funnybot9980.mason')
+-- require('funnybot9980/commentary')
+
+
