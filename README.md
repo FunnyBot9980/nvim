@@ -1,5 +1,4 @@
-This is my neovim config (and bashrc file)
-
+This is my neovim config
 uses vim-plug
 
 
