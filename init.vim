@@ -2,7 +2,7 @@ syntax on
 
 set termguicolors
 
-set clipboard+=unnamedplus
+set clipboard=unnamed
 
 set showmatch               " show matching 
 set ignorecase              " case insensitive 
@@ -20,12 +20,12 @@ set formatoptions-=o
 set smartindent
 set shiftwidth=4            " width for autoindents
 
-set relativenumber                  " add line numbers
+set number relativenumber                  " add line numbers
 set numberwidth=4           " columns used for the line number
 
 " toggle hybrid relative line numbers with SPACEn
-let mapleader = "\<Space>"
-nnoremap <leader>n :set relativenumber!<cr>
+" let mapleader = "\<Space>"
+" nnoremap <leader>n :set number!<bar>:set relativenumber?<cr>
 
 set wildmode=longest,list   " get bash-like tab completions
 filetype plugin indent on   "allow auto-indenting depending on file type
@@ -75,6 +75,8 @@ Plug 'catppuccin/nvim', { 'as': 'catppuccin' }
 Plug 'navarasu/onedark.nvim'
 
 Plug 'tpope/vim-commentary'
+
+Plug 'lukas-reineke/indent-blankline.nvim'
 
 call plug#end()
 
