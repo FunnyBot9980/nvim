@@ -1,5 +1,6 @@
 syntax on
 
+
 set termguicolors
 
 set clipboard=unnamed
